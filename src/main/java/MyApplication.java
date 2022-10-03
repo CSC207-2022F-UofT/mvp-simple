@@ -2,9 +2,7 @@ import javax.swing.*;
 
 public class MyApplication {
     public MyApplication() {
-        final View view = new View();
-        final Model model = new Model();
-        new Presenter(view, model);
+        new View();
     }
 
     public static void main(String... args) {
