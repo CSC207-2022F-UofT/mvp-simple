@@ -10,7 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.WindowConstants;
 
-public class View {
+public class View implements IView {
     // A list of listeners subscribed to this view
     private final Controller c;
     private final JLabel label;
@@ -40,7 +40,7 @@ public class View {
         frame.setVisible(true);
     }
 
-    public void setLabelText(final String text) {
+    public void showNewCount(final String text) {
         label.setText(text);
     }
 }

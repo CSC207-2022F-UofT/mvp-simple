@@ -3,16 +3,16 @@
  */
 public class Model {
     private int count = 0;
-    private final View view;
+    private final IView view;
 
-    public Model(View v)
+    public Model(IView v)
     {
         view = v;
     }
 
     public void addOneToCount() {
         count++;
-        view.setLabelText(String.valueOf(count));
+        view.showNewCount(String.valueOf(count));
     }
     
 }
